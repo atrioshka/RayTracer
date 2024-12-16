@@ -20,6 +20,7 @@ int main() {
 	*/
 
 	for (int i = 0; i < image_height; i++) {
+		std::clog << "r\Scanlines remaining: " << (image_height - i) << ' ' << std::flush;
 		for (int j = 0; j < image_width; j++) {
 
 			auto r = (double)(j) / (image_width - 1);
@@ -34,4 +35,5 @@ int main() {
 
 		}
 	}
+	std::clog << "r\Done.					\n";
 }
